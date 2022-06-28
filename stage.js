@@ -15,7 +15,7 @@ bot.command('stagecheckupdate', () =>
 				console.log(`Last: ${serverInfoLast}`)
 				console.log(`Now: ${serverinfo}`)
 				if (serverinfo > serverInfoLast)
-					Telegraf.sendMessage(ctx.message.chat.id(`❇️ Сервер Stage получил патч ${stageVersion}. Это значит, что новое обновление полностью готово и должно выйти через неделю, в следующий вторник`))
+					Telegraf.sendMessage(ctx.message.chat.id, (`❇️ Сервер Stage получил патч ${stageVersion}. Это значит, что новое обновление полностью готово и должно выйти через неделю, в следующий вторник`))
 				else
 					console.log('Сервер не изменен')
 			}
